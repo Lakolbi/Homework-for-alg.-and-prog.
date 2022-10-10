@@ -1,0 +1,17 @@
+x=tryparse(Float, readline())
+y=tryparse(Float, readline())
+if x>2 && x<=0
+  if y>=0
+    if (x+1)^2+y^2<=1 && y<=-(x+1)^2+1
+      println("Принадлежит заданной области")
+    end
+  else 
+    if (x+1)^2+y^2<=1
+      println("Принадлежит заданной области")
+    else
+      println("Не принадлежит заданной области")
+    end
+  end
+else
+  println("Не принадлежит заданной области")
+end
