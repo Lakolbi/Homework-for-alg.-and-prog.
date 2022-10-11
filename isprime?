@@ -1,0 +1,8 @@
+function isprime(n)
+    for i in 2:(sqrt(n)+1)
+        if n%i == 0
+            return false
+        end
+    return true
+    end
+end
