@@ -1,0 +1,15 @@
+function  isprimew(b)
+    n = b
+    i = 2
+    while i <  n
+        while (n%i==0)
+            n/=i;
+        end
+        i +=1
+    end
+    if  n==b
+        return true
+    else
+        return false
+    end
+end
