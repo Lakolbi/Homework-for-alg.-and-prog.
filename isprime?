@@ -1,8 +1,13 @@
-function isprime(n)
-    for i in 2:(sqrt(n)+1)
-        if n%i == 0
-            return false
-        end
-    return true
-    end
+n=tryparse(Float64, readline())
+global k=0
+
+for i in 2:(sqrt(n)+1)
+  if n%i == 0 global k=k+1
+  end
+end
+  
+if k>0
+    println("Число не простое")
+else
+    println("Число простое")
 end
