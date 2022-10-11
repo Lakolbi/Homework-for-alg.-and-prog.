@@ -1,15 +1,14 @@
-function  isprimew(b)
-    n = b
-    i = 2
-    while i <  n
-        while (n%i==0)
-            n/=i;
-        end
-        i +=1
-    end
-    if  n==b
-        return true
-    else
-        return false
-    end
+n=tryparse(Float64,readline())
+b=n
+global i=2
+while i <  n
+  while n%i==0
+    global n=n/i;
+  end
+  global i=i+1
+end
+if n==b
+  println("Число простое")
+else
+  println("Число не простое")
 end
