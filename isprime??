@@ -1,3 +1,4 @@
+println("Введите число:")
 n=tryparse(Float64,readline())
 b=n
 global i=2
