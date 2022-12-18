@@ -16,5 +16,5 @@ if counter == 0
 else
   println(s)
   println(words)
-  println("Всего таких строк = ", counter)
+  println("Всего таких слов - ", counter)
 end
