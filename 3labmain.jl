@@ -4,7 +4,7 @@ include("__a.jl")
 using .lab
 
 function main()
-    n = tryparse(Int64, readline())
+    n = input()
     println(count_square(n))
 end
 
