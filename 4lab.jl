@@ -10,5 +10,6 @@ function readfile(name)
     close(tmpio)
     mv(tmppath, name, force = true) #переносим временный файл tmppath к изначальному. f. force = true заменяет один файл на другой
 end
-
+            
+println("Введите названия файла с разрешением: ")
 readfile(joinpath(@__DIR__, readline()))
